@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Preloader: brief brand moment on first visit, skipped on repeat visits this session
+  const preloader = document.getElementById('preloader');
+  if (preloader && !sessionStorage.getItem('alina_visited')) {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        preloader.classList.add('is-hidden');
+        sessionStorage.setItem('alina_visited', '1');
+      }, 500);
+    });
+  } else if (preloader) {
+    sessionStorage.setItem('alina_visited', '1');
+  }
+
   const items = document.querySelectorAll('.intro, .services, .works, .booking, .price-item, .gallery-card');
   items.forEach((el, i) => {
     el.classList.add('reveal');
