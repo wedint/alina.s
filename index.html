@@ -16,6 +16,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="preloader" class="preloader"><span class="preloader-logo">alina <i>s.</i></span></div>
+<script>
+  if (sessionStorage.getItem('alina_visited')) {
+    document.getElementById('preloader').classList.add('is-hidden');
+  }
+</script>
 <div class="site">
 
   <header class="topbar">
@@ -33,7 +39,7 @@
       <div class="hero-sticker">made<br>with love <b>♡</b></div>
 
       <div class="hero-copy">
-        <span class="eyebrow">окрашивание и стрижки</span>
+        <span class="eyebrow">private hair studio</span>
         <h1>Alina<br><em>Suetina</em></h1>
         <div class="hero-script">pretty hair<br>pretty mood</div>
       </div>
@@ -76,7 +82,7 @@
             который хочется показывать.
           </p>
           <p>
-            Каждый гость для меня — это отдельная история,
+            Каждая гостья для меня — это отдельная история,
             а не просто запись в расписании.
           </p>
           <div class="signature script">с любовью, Алина</div>
@@ -92,8 +98,8 @@
 
     <section class="services" id="services">
       <div class="section-title">
-        <span>02 · прайс</span>
-        <span>для твоих волос</span>
+        <span>02 · services</span>
+        <span>for your hair</span>
       </div>
 
       <h2 class="big-title">hair<br><em>services</em></h2>
@@ -146,11 +152,12 @@
           </div>
         </div>
       </div>
+      <p class="note">точная стоимость зависит от длины, густоты и исходного состояния волос.</p>
     </section>
 
     <section class="works" id="works">
       <div class="section-title">
-        <span>03 · работы</span>
+        <span>03 · real girls</span>
         <span>swipe →</span>
       </div>
 
@@ -165,7 +172,7 @@
             <!-- ФОТО №3: работа 1 -->
             <img src="2 hair.jpg" alt="Работа Алины 1">
           </div>
-          <p>airtouch · blonde</p>
+          <p>soft brunette · tone</p>
         </article>
 
         <article class="gallery-card second">
@@ -194,7 +201,7 @@
 
     <section class="booking" id="booking">
       <div class="booking-topline">
-        <span class="eyebrow">04 · запись открыта</span>
+        <span class="eyebrow">04 · booking is open</span>
         <a href="#" class="booking-brand">alina <i>s.</i></a>
       </div>
 
@@ -212,6 +219,7 @@
 
       <div class="booking-bottom">
         <span>Самара · только по записи</span>
+        <span class="booking-signature script">with love, Алина ♡</span>
       </div>
     </section>
 
@@ -222,8 +230,8 @@
   </a>
 
   <footer>
-    <div><b>Алина Суетина</b><span>парикмахер-колорист</span></div>
-    <div><span>самара</span><span>© 2026</span></div>
+    <div><b>Алина Суетина</b><span>hair colorist</span></div>
+    <div><span>samara</span><span>© 2026</span></div>
   </footer>
 </div>
 
